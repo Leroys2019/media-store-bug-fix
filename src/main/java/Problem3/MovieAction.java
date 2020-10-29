@@ -16,7 +16,6 @@ public class MovieAction extends Movie {
     public int getLateFeeInDollar() {
         return lateFeePerDayInDollar;
     }
-
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
         if (numOfDaysPastDue <= 0) {

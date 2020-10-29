@@ -1,5 +1,6 @@
 import Problem3.*;
 import org.junit.Test;
+import java.util.UUID;
 
 import static org.junit.Assert.*;
 
@@ -7,11 +8,27 @@ public class Problem3Test {
     @Test
     public void catchTheBugInBook() {
         // quiz
+        Book a = new BookFiction("T1","A1"."G1");
+        Book b = new BookFiction("T2","A2","G2");
+        assertFalse(b.equals(a));
+
+        UUID var = UUID.randomUUID();
+        a.setId(var);
+        b.setId(var);
+        assertTrue(b.equals(a));
     }
 
     @Test
     public void catchTheBugInMovie() {
         // quiz
+        Movie c = new MovieAction("R1","T1");
+        Movie d = new MovieAction("R2","T2");
+        assertFalse(d.equals(c));
+
+        UUID var = UUID.randomUUID();
+        c.setId(var);
+        d.setId(var);
+        assertTrue(c.equals(d));
     }
 
     // DO NOT REMOVE OR CHANGE ANYTHING BELOW THIS!
