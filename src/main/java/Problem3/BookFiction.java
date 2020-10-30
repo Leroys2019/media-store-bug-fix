@@ -16,6 +16,9 @@ public class BookFiction extends Book {
         super(anotherBook);
         this.genres = anotherBook.genres;
     }
+    public void setGenres(String genres){
+        this.genres = genres;
+    }
 
     @Override
     public int getLateFeeInDollar() {
