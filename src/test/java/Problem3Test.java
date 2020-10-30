@@ -8,7 +8,8 @@ public class Problem3Test {
     @Test
     public void catchTheBugInBook() {
         // quiz
-        Book a = new BookFiction("T1","A1"."G1");
+
+        Book a = new BookFiction("T1","A1","G1");
         Book b = new BookFiction("T2","A2","G2");
         assertFalse(b.equals(a));
 
